@@ -229,3 +229,4 @@ var triangeArea = (base, height) => {
 
 var triangeArea = (base, height) => 0.5 * base * height;
 console.log(triangeArea(5,7));
+
