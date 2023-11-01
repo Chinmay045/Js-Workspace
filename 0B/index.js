@@ -182,3 +182,19 @@ var triangleArea = function (b, h) {
 console.log(`Area using Function :  ${areaOfTriangle(10, 4)}`); //Area using Function :  20
 
 console.log(`Area using Function Expression : ${triangleArea(5, 7)} `); //Area using Function Expression : 17.5 
+
+
+//Transferring Function Expression
+
+var triangleArea = function (b, h) {
+    let area = 0.5 * b * h;
+    return area;
+}
+
+var area = triangleArea;
+
+// triangleArea = null;
+
+console.log(`using area variable : ${area(5, 6)}`); //using area variable : 15
+
+console.log(`using triangeArea variable : ${triangleArea(4, 8)}`); //using triangeArea variable : 16
