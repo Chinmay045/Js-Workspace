@@ -131,7 +131,7 @@ areaOfTriangle(); //area of triangle is :12.5
 
 function areaOfRectangle(length = 10, breadth = 10) {
     let area = length * breadth;
-    console.log("Area of rectangle is " + area); 
+    console.log("Area of rectangle is " + area);
 }
 
 function areaOfTriangle(b, h) {
@@ -145,3 +145,21 @@ console.log(triangleArea); //75
 
 areaOfRectangle(15, 20); //Area of rectangle is 300
 
+//Helper Function
+//Invoking one function inside another function is known as Helper Function
+
+function mangoWeight(count) {
+    return count * .25;
+}
+
+function mangoCost(count) {
+    return mangoWeight(count) * 175;
+}
+
+let costOfMangoes = mangoCost(25);
+
+console.log(`cost of 25 mangoes is : Rs. ${costOfMangoes} only/-`); //cost of 25 mangoes is : Rs. 1093.75 only/-
+
+console.log("cost of 35 mangoes is Rs." + mangoCost(35)); //cost of 35 mangoes is Rs.1531.25
+
+console.log(`cost of 45 mangoes is Rs. ${mangoCost(45)} only/-`); //cost of 45 mangoes is Rs. 1968.75 only/-
