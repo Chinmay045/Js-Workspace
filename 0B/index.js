@@ -100,6 +100,28 @@ function areaOfRectangle(length, breadth) {
 sayHello('Chinmay'); //Hello Mr. Chinmay! How are you
 sayNamaste("Chinmay"); //namaste Chinmay ! Welcome Home
 areaOfTriangle(2, 3); //area of triangle is:3
-areaOfRectangle(4, 5);
+areaOfRectangle(4, 5); //Area of rectangle is 20
 
-//
+
+//Default arguments
+//While declaring a functio parameters , we can declare it's default values.
+//In case the user forgets to pass the arguments , default argumenst will be considered for processing.
+
+
+function sayNamaste(myName = "Random Person") {
+    console.log(`namaste ${myName} ! Welcome Home`);
+}
+
+function areaOfTriangle(b = 5, h = 5) {
+    let area = 0.5 * b * h;
+    console.log("area of triangle is :" + area);
+}
+
+function areaOfRectangle(length = 10, breadth = 5) {
+    let area = length * breadth;
+    console.log("Area of rectangle is " + area);
+}
+
+sayNamaste();
+areaOfRectangle();
+areaOfTriangle();
