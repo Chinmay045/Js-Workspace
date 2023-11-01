@@ -33,3 +33,24 @@ console.log(`You know, ${person} is a good boy`);
 
 let condition = false;
 (condition) ? (console.log("First Statement")) : (console.log("Second Statement"));
+
+
+//Switch Example
+
+let position = "Second Place";
+
+switch(position){
+    case "First Place":
+        console.log("You will get gold medal");
+        break;
+
+    case "Second Place":
+        console.log("You will get Silver medal");
+        break;
+    case "Third Place":
+        console.log("You will get bronze medal");
+        break;
+   default:
+        console.log("You will get Silver medal");
+        break;
+}
