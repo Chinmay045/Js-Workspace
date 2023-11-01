@@ -33,3 +33,9 @@ console.log(northAmerica); //[ 'Canada', 'USA', 'Mexico', 'Panama' ]
 northAmerica = ['Coloumbia','Brazil'];   //TypeError: Assignment to constant variable.
 
 
+
+let southAsia = ['India', 'Pakistan', 'Bangladesh'];
+
+let SouthAsia = ['India', 'Pakistan', 'Bangladesh', "Bhutan", "Burma", 'Nepal'];
+console.log(southAsia.length);
+console.log(SouthAsia.length);
