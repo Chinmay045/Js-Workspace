@@ -163,3 +163,22 @@ console.log(`cost of 25 mangoes is : Rs. ${costOfMangoes} only/-`); //cost of 25
 console.log("cost of 35 mangoes is Rs." + mangoCost(35)); //cost of 35 mangoes is Rs.1531.25
 
 console.log(`cost of 45 mangoes is Rs. ${mangoCost(45)} only/-`); //cost of 45 mangoes is Rs. 1968.75 only/-
+
+//Function Expression
+//Function Expression is nothing but a function object referred by avariable
+//As we don't name anything is called :Anonymous function
+//With this we can start transferring the function object to another variable and start invoking the functio by that name
+
+function areaOfTriangle(b, h) {
+    let area = 0.5 * b * h;
+    return area;
+}
+
+var triangleArea = function (b, h) {
+    let area = 0.5 * b * h;
+    return area;
+}
+
+console.log(`Area using Function :  ${areaOfTriangle(10, 4)}`); //Area using Function :  20
+
+console.log(`Area using Function Expression : ${triangleArea(5, 7)} `); //Area using Function Expression : 17.5 
