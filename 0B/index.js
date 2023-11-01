@@ -39,7 +39,7 @@ let condition = false;
 
 let position = "Second Place";
 
-switch(position){
+switch (position) {
     case "First Place":
         console.log("You will get gold medal");
         break;
@@ -50,7 +50,25 @@ switch(position){
     case "Third Place":
         console.log("You will get bronze medal");
         break;
-   default:
+    default:
         console.log("You will get Silver medal");
         break;
 }
+
+//Function in Js
+//Functions  are the block of code with a name (identifier), which when invoked performes certain set of operations.
+//A function can have various inputs and it will return one output.
+
+function sayHello() {
+    console.log("Hello Everyone");
+}
+
+function remindMe() {
+    console.log("Water the plants");
+}
+
+sayHello();
+sayHello();
+sayHello();
+remindMe();
+remindMe();
