@@ -16,10 +16,15 @@
 
 let flag = null;
 
-if(flag){
+if (flag) {
     console.log("Flag is Truthy");
 }
-else{
+else {
     console.log("Flag is Falsy");
 }
 
+//Short circuit Assignment
+
+let myName = '';
+let person = myName || "Nobody";
+console.log(`You know, ${person} is a good boy`);
