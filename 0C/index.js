@@ -72,4 +72,16 @@ console.log(nato.slice(4, 6)); //[ 'Canada', 'France' ]
 
 console.log(nato.indexOf("Germany"));  //3
 
-for(let i)
+//loop
+for(let i = 0; i < 5; i++){
+    console.log(i);
+}
+
+let nato = ['USA', 'UK', 'Germany', 'Canada', 'France', 'Italy', 'Turky'];
+for(let i = 0; i < nato.length; i++ ){
+    console.log(nato[i]);
+}
+
+for(let i = 7; i>=0;i--){
+    console.log(i);
+}
