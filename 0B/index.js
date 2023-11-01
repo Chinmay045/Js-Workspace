@@ -217,3 +217,15 @@ var sayNamaste = myName => {
 console.log(`Area of triangle is : ${triangeArea(5, 6)}`); //Area of triangle is : 15
 sayHello(); //Hello Everyone
 sayNamaste("Chinmay"); //Namaste Chinmay ! Welcome Home!
+
+
+//Concise Body(Arrow function)
+
+var triangeArea = (base, height) => {
+    let area = 0.5 * base * height;
+    return area;
+}
+
+
+var triangeArea = (base, height) => 0.5 * base * height;
+console.log(triangeArea(5,7));
