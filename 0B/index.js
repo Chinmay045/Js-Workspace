@@ -28,3 +28,8 @@ else {
 let myName = '';
 let person = myName || "Nobody";
 console.log(`You know, ${person} is a good boy`);
+
+//Ternary Operator
+
+let condition = false;
+(condition) ? (console.log("First Statement")) : (console.log("Second Statement"));
