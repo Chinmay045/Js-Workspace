@@ -122,6 +122,26 @@ function areaOfRectangle(length = 10, breadth = 5) {
     console.log("Area of rectangle is " + area);
 }
 
-sayNamaste();
-areaOfRectangle();
-areaOfTriangle();
+sayNamaste(); //namaste Random Person ! Welcome Home
+areaOfRectangle(); //Area of rectangle is 50
+areaOfTriangle(); //area of triangle is :12.5
+
+
+//Return Statements
+
+function areaOfRectangle(length = 10, breadth = 10) {
+    let area = length * breadth;
+    console.log("Area of rectangle is " + area); 
+}
+
+function areaOfTriangle(b, h) {
+    let area = 0.5 * b * h;
+    return area;
+}
+
+
+let triangleArea = areaOfTriangle(10, 15);
+console.log(triangleArea); //75
+
+areaOfRectangle(15, 20); //Area of rectangle is 300
+
