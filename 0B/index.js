@@ -198,3 +198,22 @@ var area = triangleArea;
 console.log(`using area variable : ${area(5, 6)}`); //using area variable : 15
 
 console.log(`using triangeArea variable : ${triangleArea(4, 8)}`); //using triangeArea variable : 16
+
+//Arrow head Function
+
+var triangeArea = (base, height) => {
+    let area = 0.5 * base * height;
+    return area;
+}
+
+var sayHello = () => {
+    console.log("Hello Everyone");
+}
+
+var sayNamaste = myName => {
+    console.log(`Namaste ${myName} ! Welcome Home!`);
+}
+
+console.log(`Area of triangle is : ${triangeArea(5, 6)}`); //Area of triangle is : 15
+sayHello(); //Hello Everyone
+sayNamaste("Chinmay"); //Namaste Chinmay ! Welcome Home!
