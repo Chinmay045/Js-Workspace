@@ -50,3 +50,7 @@ nato.pop();
 nato.pop();
 console.log(nato);
 
+//Unshift and Shift
+//Unshift and Shift are used to add and remove array from the start
+nato.unshift('Ukraine','Finland',"Poland");
+console.log(nato);
