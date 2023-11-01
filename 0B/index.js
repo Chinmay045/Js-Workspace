@@ -72,3 +72,34 @@ sayHello();
 sayHello();
 remindMe();
 remindMe();
+
+
+//Parameter and Arguments
+//Inputs defined at the start of te function in known as Parameters
+//Inputs defined at the time of invoking the function is known as Arguments.
+
+
+function sayHello(myName) {
+    console.log("Hello Mr. " + myName + "! How are you");
+}
+
+function sayNamaste(myName) {
+    console.log(`namaste ${myName} ! Welcome Home`);
+}
+
+function areaOfTriangle(b, h) {
+    let area = 0.5 * b * h;
+    console.log("area of triangle is:" + area);
+}
+
+function areaOfRectangle(length, breadth) {
+    let area = length * breadth;
+    console.log("Area of rectangle is " + area);
+}
+
+sayHello('Chinmay'); //Hello Mr. Chinmay! How are you
+sayNamaste("Chinmay"); //namaste Chinmay ! Welcome Home
+areaOfTriangle(2, 3); //area of triangle is:3
+areaOfRectangle(4, 5);
+
+//
