@@ -94,14 +94,49 @@ fruitSalad.forEach((fruit) => {
 
 //Aam zindagi
 
-const numbers = [1,2,3,4,5];
+const numbers = [1, 2, 3, 4, 5];
 
-const logic = function(num){
-    return num * num ;
+const logic = function (num) {
+    return num * num;
 }
 
 const squares = numbers.map(logic);
 console.log(squares);  //[ 1, 4, 9, 16, 25 ]
 
+//Mentos zindagi
+const numbers = [1, 2, 3, 4, 5];
 
+const logic = numbers.map(function (num) {
+    return num * num;
+});
 
+console.log(logic);
+
+//Metos zindagi with arrow function
+
+const numbers = [1, 2, 3, 4, 5];
+
+// const squares = numbers.map(num  =>{
+//     return num * num;
+// });
+const squares = numbers.map(num => num * num);
+
+console.log(squares);
+
+//Filter Method
+//It reaturns the new array after the filtering the elements from existing array
+//The Callback function (logic method) for the .filter () method should return the true or false.
+
+const mixedArray = ['apple', 'banana', 5.4, 8, 'kiwi', '3.147', 9.5, '25'];
+
+const logic  = function (item){
+    if(typeof item == 'number') {
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+const num = mixedArray.filter(logic);
+console.log(num);
