@@ -18,4 +18,7 @@ const person = {firstName:"John", lastName:"Doe"};
 const cars = ["Saab", "Volvo", "BMW"];
 
 // Date object:
-const date = new Date("2022-03-25");
+const date = new Date("2022-03-25");a
+
+let r = 16 + "Volvo";
+console.log(r);
