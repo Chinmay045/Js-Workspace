@@ -22,3 +22,6 @@ const date = new Date("2022-03-25");a
 
 let r = 16 + "Volvo";
 console.log(r);
+
+let q = 16 + 4 + "Volvo";
+console.log(q);
