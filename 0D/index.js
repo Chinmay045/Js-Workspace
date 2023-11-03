@@ -87,4 +87,21 @@ fruitSalad.forEach((fruit) => {
 });
 
 
+//Map Functions
+
+//forEach() popsout an array and it operates on it.
+//map() works in the same way , but it returns a new array with added logic
+
+//Aam zindagi
+
+const numbers = [1,2,3,4,5];
+
+const logic = function(num){
+    return num * num ;
+}
+
+const squares = numbers.map(logic);
+console.log(squares);  //[ 1, 4, 9, 16, 25 ]
+
+
 
