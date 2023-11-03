@@ -178,4 +178,23 @@ let startsWithD = fruits.findIndex((fruit) => {
 
 console.log(startsWithD);
 
-//
+//sort() method
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits);
+
+
+//Aam zindagi
+const ages = [3, 10, 18, 20];
+function checkAdult(age) {
+  return age > 18;
+}
+console.log(ages.some(checkAdult));
+
+
+//Mentos Zindagi
+const ages = [3, 10, 18, 20];
+let Age = ((age)=> {
+  return age > 18;
+});
+console.log(ages.some(Age));
