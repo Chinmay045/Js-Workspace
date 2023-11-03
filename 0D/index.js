@@ -191,15 +191,15 @@ console.log(fruits);
 //Aam zindagi
 const ages = [3, 10, 18, 20];
 function checkAdult(age) {
-  return age > 18;
+    return age > 18;
 }
 console.log(ages.some(checkAdult));
 
 
 //Mentos Zindagi
 const ages = [3, 10, 18, 20];
-let Age = ((age)=> {
-  return age > 18;
+let Age = ((age) => {
+    return age > 18;
 });
 console.log(ages.some(Age));
 
@@ -213,7 +213,7 @@ const numbers = [15.5, 2.3, 1.1, 4.7];
 let sum = numbers.reduce(getSum);
 
 function getSum(total, num) {
-  return total + Math.round(num);
+    return total + Math.round(num);
 }
 
 console.log(sum);
@@ -223,8 +223,8 @@ console.log(sum);
 const numbers = [15.5, 2.3, 1.1, 4.7];
 // (getSum);
 
-let sum = numbers.reduce((total, num) =>{
-  return total + Math.round(num);
+let sum = numbers.reduce((total, num) => {
+    return total + Math.round(num);
 });
 
 console.log(sum);
