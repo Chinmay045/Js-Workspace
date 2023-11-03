@@ -140,3 +140,13 @@ const logic  = function (item){
 
 const num = mixedArray.filter(logic);
 console.log(num);
+
+//Aam zindagi (short form)
+const mixedArray = ['apple', 'banana', 5.4, 8, 'kiwi', '3.147', 9.5, '25'];
+
+const logic = function (item) {
+    return (typeof item == 'number') ? true :false;
+}
+
+const num = mixedArray.filter(logic);
+console.log(num);
