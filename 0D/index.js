@@ -184,6 +184,10 @@ fruits.sort();
 console.log(fruits);
 
 
+//Some()
+// The some() method checks if any array elements pass a test (provided as a callback function).
+// The some() method executes the callback function once for each array element.
+// The some() method returns true (and stops) if the function returns true for one of the array elements.
 //Aam zindagi
 const ages = [3, 10, 18, 20];
 function checkAdult(age) {
@@ -198,3 +202,29 @@ let Age = ((age)=> {
   return age > 18;
 });
 console.log(ages.some(Age));
+
+
+//reduce Method
+//Aam zindagi
+// The reduce() method executes a reducer function for array element.
+// The reduce() method returns a single value: the function's accumulated result.
+// The reduce() method does not execute the function for empty array elements.
+const numbers = [15.5, 2.3, 1.1, 4.7];
+let sum = numbers.reduce(getSum);
+
+function getSum(total, num) {
+  return total + Math.round(num);
+}
+
+console.log(sum);
+
+//Mentos Zindagi
+
+const numbers = [15.5, 2.3, 1.1, 4.7];
+// (getSum);
+
+let sum = numbers.reduce((total, num) =>{
+  return total + Math.round(num);
+});
+
+console.log(sum);
