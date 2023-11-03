@@ -25,3 +25,8 @@ console.log(r);
 
 let q = 16 + 4 + "Volvo";
 console.log(q);
+
+let x;       // Now x is undefined
+x = 5;       // Now x is a Number
+x = "John";  
+console.log(x);
