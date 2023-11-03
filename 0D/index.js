@@ -129,11 +129,11 @@ console.log(squares);
 
 const mixedArray = ['apple', 'banana', 5.4, 8, 'kiwi', '3.147', 9.5, '25'];
 
-const logic  = function (item){
-    if(typeof item == 'number') {
+const logic = function (item) {
+    if (typeof item == 'number') {
         return true;
     }
-    else{
+    else {
         return false;
     }
 }
@@ -145,8 +145,37 @@ console.log(num);
 const mixedArray = ['apple', 'banana', 5.4, 8, 'kiwi', '3.147', 9.5, '25'];
 
 const logic = function (item) {
-    return (typeof item == 'number') ? true :false;
+    return (typeof item == 'number') ? true : false;
 }
 
 const num = mixedArray.filter(logic);
 console.log(num);
+
+// *******************************//
+const mixedArray = ['apple', 'banana', 5.4, 8, 'kiwi', '3.147', 9.5, '25'];
+
+const logic = (item) => {
+    return (typeof item == 'number') ? true : false;
+}
+
+const num = mixedArray.filter(logic);
+console.log(num);
+
+//Find Index Method
+//findIndex() Method retrieves the index of first element of array which mathes wit the true  condition with the logic
+
+let fruits = ['apple', 'pineapple', 'banana', 'dragon-fruit', 'orange', 'kiwi'];
+
+let fruitNum = fruits.findIndex((fruit) => {
+    return fruit === 'banana';
+});
+
+console.log(fruitNum);
+
+let startsWithD = fruits.findIndex((fruit) => {
+    return fruit[0] === 'd';
+});
+
+console.log(startsWithD);
+
+//
