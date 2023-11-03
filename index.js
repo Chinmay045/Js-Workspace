@@ -12,3 +12,7 @@ let x = 5;
 x++;
 let z = x;
 console.log(z);
+
+let x = 5;
+let z = x ** 2;
+console.log(z);
