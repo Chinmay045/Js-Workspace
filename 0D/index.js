@@ -57,5 +57,34 @@ const add = (x, y) => {
 
 sum(add, 10, 15);
 
+//Iterators
+//Iterators are the methods used on arrays to work on the same
+//Some of the common iterators are foreach(),map() , filter()
+
+//Aam zindagi
+const fruitSalad = ['apple', 'pineapple', 'banana', 'orange', 'kiwi', 'custard'];
+let itrFruit = function (fruit) {
+    console.log(`10 grams of ${fruit}`);
+}
+
+fruitSalad.forEach(itrFruit);
+
+
+//Mentos Zindagi
+const fruitSalad = ['apple', 'pineapple', 'banana', 'orange', 'kiwi', 'custard'];
+
+
+fruitSalad.forEach(function (fruit) {
+    console.log(`10 grams of ${fruit}`);
+});
+
+//Mentos zindagi with arrow function
+const fruitSalad = ['apple', 'pineapple', 'banana', 'orange', 'kiwi', 'custard'];
+
+
+fruitSalad.forEach((fruit) => {
+    console.log(`10 grams of ${fruit}`);
+});
+
 
 
