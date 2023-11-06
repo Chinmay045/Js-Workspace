@@ -290,3 +290,21 @@ console.log(modEnt);
 
 
 //Spread Operator
+
+const profile = {
+    firstName: 'Chinmay',
+    lastName: "KS"
+};
+
+const adderss = {
+    country: "India",
+    city: "Bengaluru"
+};
+
+const user ={
+    ...profile,
+    gender: 'male',
+    ...adderss
+}
+
+console.log(user);
