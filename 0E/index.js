@@ -16,3 +16,48 @@ let response = dog['responds to'];
 console.log(`My do responds to ${response}`);
 console.log(dog.tag_no);
 
+
+let baby = {
+    cat: 'kitten',
+    dog: 'puppy',
+    kangaroo: 'zoey',
+    'horse baby': 'fawn',
+    'baby duck': 'duckling',
+    'lion': 'cub',
+    sheep: 'lamb'
+}
+
+// console.log(baby);  //Prints the whole object
+
+console.log(baby.cat);
+console.log(baby.dog);
+console.log(baby['horse baby']);
+console.log(baby[' baby duck ']);
+console.log(baby.lion);
+
+baby.cow = 'Calf';
+baby['Baby Monkey'] = 'infant';
+console.log(baby);
+delete baby.sheep;
+delete baby['baby duck'];
+
+console.log(baby); //Prints the whole object
+
+const actions = {
+    sayHello: function(){
+        console.log("Hello Everyone");
+    },
+
+    sayNamaste: function(person) {
+        console.log(`Namaste ${person}, How are you ?`);
+    },
+    add: function (num1,num2) {
+        return num1 + num2;
+    }
+}
+
+actions.sayHello();
+actions.sayNamaste('Chinmay');
+console.log(`Sum of two numbers is :${actions.add(10,15)}`);
+
+
