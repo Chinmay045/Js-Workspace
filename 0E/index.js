@@ -60,4 +60,24 @@ actions.sayHello();
 actions.sayNamaste('Chinmay');
 console.log(`Sum of two numbers is :${actions.add(10,15)}`);
 
+let profile = {
+    fullName: 'Chinmay KS',
+    status:'Single',
+    children: 0,
+    parents: ['Kantharaj', 'Rashmi'],
+    salaried: true
+}
 
+const modifyName = function(obj, changedName) {
+    obj.fullName = changedName;
+}
+
+const addChild = (obj) => {
+    obj.children = obj.children +1;
+}
+
+modifyName(profile, 'CKS');
+console.log(profile);
+
+addChild(profile);
+console.log(profile);
