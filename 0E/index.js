@@ -96,3 +96,21 @@ let baby = {
 for(let key in baby){
     console.log(`Child of ${key} is ${baby[key]}`);
 }
+
+
+let dog = {
+    breed: 'Golden Retrevier' ,
+    color: 'Orange',
+    weight: 18,
+
+    hungry(){
+        console.log("Waggig the tail");
+    },
+
+    getInfo() {
+        return `My dog is a ${this.breed},is  ${this.color} in color and weighs ${this.weight} kilos`
+    }
+}
+
+dog.hungry();
+console.log(dog.getInfo());
