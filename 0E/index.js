@@ -97,7 +97,7 @@ for(let key in baby){
     console.log(`Child of ${key} is ${baby[key]}`);
 }
 
-
+//Hybrid Objects
 let dog = {
     breed: 'Golden Retrevier' ,
     color: 'Orange',
@@ -114,3 +114,99 @@ let dog = {
 
 dog.hungry();
 console.log(dog.getInfo());
+
+let dog = {
+    breed: 'Golden Retrevier' ,
+    color: 'Orange',
+    weight: 18,
+
+    hungry: () =>{
+        console.log("Waggig the tail");
+    },
+
+    getInfo: () =>{
+        return `My dog is a ${this.breed},is  ${this.color} in color and weighs ${this.weight} kilos`
+    }
+}
+
+dog.hungry();
+console.log(dog.getInfo()); //My dog is a undefined,is  undefined in color and weighs undefined kilos
+//we will get this error because using arraow functions we the function will be created outside the  object.And it cannot access the properties inside the object.
+//so it is advised not to use arrow functions.
+
+
+//Get methods
+
+let dog = {
+    _breed: 'Golden Retrevier' ,
+    color: 'Orange',
+    _weight: 18,
+
+    get breed(){
+        return this._breed;
+    },
+    get weight(){
+        return this._weight;
+    },
+
+    hungry(){
+        console.log("Waggig the tail");
+    },
+
+    showInfo() {
+        return `My dog is a ${this._breed},is  ${this.color} in color and weighs ${this.weight} kilos`;
+    }
+}
+
+console.log(dog.breed);
+console.log(dog.weight);
+console.log(dog.color);
+
+dog.hungry();
+console.log(dog.showInfo());
+
+//Setter Method
+
+
+let dog = {
+    _breed: 'Golden Retrevier' ,
+    color: 'Orange',
+    _weight: 18,
+
+    get breed(){
+        return this._breed;
+    },
+    get weight(){
+        return this._weight;
+    },
+
+    set breed(newBreed){
+        if(typeof newBreed == 'string'){
+            this._breed = newBreed;
+        }
+    },
+
+    set weight(num){
+        if(typeof num == 'number' && num > 0){
+            this._weight = num;
+        }
+        else{
+            console.log("Please enter a valid number above zero");
+        }
+    }
+   
+}
+
+
+console.log(`Dog breed before : ${dog.breed}`);
+console.log(`Dog weight before : ${dog.weight}`);
+console.log(`Dog Color Before :${dog.color}`);
+
+
+dog.breed = 'German Shepard';
+dog.weight = 23;
+dog.color = 'Blackish Brown';
+
+console.log(`Dog breed after : ${dog.breed}`);
+console.log(`Dog weight after : ${dog.weight}`);
+console.log(`Dog Color after :${dog.color}`);
