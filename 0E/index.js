@@ -265,3 +265,28 @@ const dogFactory = (breed, weight, color, violent) => {
     let d2 = dogFactory('German Sheapered', 22, 'Black', true);
     d2.showInfo();
 
+
+//Objects and Keys
+
+let d3 = dogFactory('Laborder', 18, 'Orange', false);
+
+const dogKeys = Object.keys(d3);
+console.log(dogKeys);
+
+
+const dogKeys = Object.keys(d3);
+console.log(dogKeys);
+
+const dogEntries = Object.entries(d3);
+console.log(dogEntries);
+
+//Assign example
+
+const modifiedDog = Object.assign({tail: 'Long and Furry', response_time:2},d1);
+
+const modEnt = Object.entries(modifiedDog);
+console.log(modEnt);
+
+
+
+//Spread Operator
