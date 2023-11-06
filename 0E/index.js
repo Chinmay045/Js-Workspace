@@ -210,3 +210,26 @@ dog.color = 'Blackish Brown';
 console.log(`Dog breed after : ${dog.breed}`);
 console.log(`Dog weight after : ${dog.weight}`);
 console.log(`Dog Color after :${dog.color}`);
+
+
+//Factory
+const dogFactory = (breed, weight, color, violent) =>{
+    return {
+        _breed: breed,
+        _weight:weight,
+        _color:color,
+        _violent:violent,
+
+        showInfo(){
+            console.log(`My dog is a ${this._breed}, whose color is ${this._color} & it weighs ${this._weight} kilos`);
+
+            this._violent ? console.log("It is ferocious \n") :console.log("It is sweet \n");;
+        }
+    }
+}
+
+let d1 = dogFactory('Labrardor' ,18, 'Orange', false);
+d1.showInfo();
+
+let d2 = dogFactory('German Sheapered', 22, 'Black', true);
+d2.showInfo();
