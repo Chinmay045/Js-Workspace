@@ -81,3 +81,18 @@ console.log(profile);
 
 addChild(profile);
 console.log(profile);
+
+
+let baby = {
+    cat: 'kitten',
+    dog: 'puppy',
+    kangaroo: 'zoey',
+    'horse baby': 'fawn',
+    'baby duck': 'duckling',
+    'lion': 'cub',
+    sheep: 'lamb'
+}
+
+for(let key in baby){
+    console.log(`Child of ${key} is ${baby[key]}`);
+}
