@@ -40,3 +40,23 @@ let personTwo = {
 }
 
 personOne.printName.call(personTwo);
+
+//Approach no:2 (Aam Zindagi)
+
+let printName = function (obj){
+    console.log(obj.firstName + " " + obj.lastName);
+}
+
+let personOne = {
+    firstName: "Chinmay",
+    lastName: "Ks",
+}
+
+
+let personTwo = {
+    firstName: "Sachin",
+    lastName:"Tendulkar",
+}
+
+printName(personOne);
+printName(personTwo);
