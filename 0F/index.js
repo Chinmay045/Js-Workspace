@@ -130,3 +130,25 @@ printName.apply(personTwo, ["Mumbai"]);
 
 //apply() method is using 'Pass By Reference' as we pass the object on which the method is to be called (with some additional parameters:as an array)
 
+//Bind method
+
+
+let personOne = {
+    firstName: "Chinmay",
+    lastName: "Ks",
+}
+
+
+let personTwo = {
+    firstName: "Sachin",
+    lastName: "Tendulkar",
+}
+
+let printName = function (hometown, state) {
+    console.log(`\n ${this.firstName} ${this.lastName} From ${hometown} ${state}`);
+}
+
+let f1 = printName.bind(personOne, "Bengaluru", "Karnataka");
+let f2 = printName.bind(personTwo, "Mumbai");
+f1();
+f2();
