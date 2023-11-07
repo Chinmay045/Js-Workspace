@@ -103,3 +103,25 @@ let printName = function (hometown, state) {
 
 printName.call(personOne, "Bengaluru", "Karnataka");
 printName.call(personTwo, "Mumbai");
+
+//Apply method
+
+
+let personOne = {
+    firstName: "Chinmay",
+    lastName: "Ks",
+}
+
+
+let personTwo = {
+    firstName: "Sachin",
+    lastName: "Tendulkar",
+}
+
+let printName = function (hometown, state) {
+    console.log(`\n ${this.firstName} ${this.lastName} From ${hometown} ${state}`);
+}
+
+printName.apply(personOne, ["Bengaluru", "Karnataka"]);
+printName.apply(personTwo, ["Mumbai"]);
+
