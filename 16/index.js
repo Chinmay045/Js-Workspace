@@ -7,3 +7,6 @@ let length = text.length;
 console.log(length);
 
 let text = "We are the so-called \"Vikings\" from the north.";
+
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
