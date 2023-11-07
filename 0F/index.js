@@ -144,11 +144,14 @@ let personTwo = {
     lastName: "Tendulkar",
 }
 
+
 let printName = function (hometown, state) {
     console.log(`\n ${this.firstName} ${this.lastName} From ${hometown} ${state}`);
 }
 
+
 let f1 = printName.bind(personOne, "Bengaluru", "Karnataka");
+
 let f2 = printName.bind(personTwo, "Mumbai");
 f1();
 f2();
