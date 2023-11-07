@@ -5,3 +5,5 @@ let answer3 = 'He is called "Johnny"';
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let length = text.length;
 console.log(length);
+
+let text = "We are the so-called \"Vikings\" from the north.";
