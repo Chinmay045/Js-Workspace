@@ -65,3 +65,24 @@ d2.showInfo();
 d3.showInfo();
 d4.showInfo();
 
+//Notes: 
+//'this keyword': it is used to eleminate cconflict between local variables and object level variables.
+//'this keyword' is always holds the reference of currently holding object.
+
+class IceCream {
+    constructor(flavour, size){
+        this._flavour = flavour;
+        this._size = size;
+    }
+
+    showInfo(){
+        console.log(`My IceCream Flavour is ${this._flavour} and the size of the cone is ${this._size}`);
+    }
+}
+
+let i = new IceCream("strawberry", 25);
+let i2 = new IceCream("Mango", 12);
+i2.showInfo();
+i.showInfo();
+
+
