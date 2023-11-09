@@ -8,3 +8,6 @@ function getRndInteger(min, max) {
   }
 
   getRndInteger();
+
+  let x = 0;
+Boolean(x);
