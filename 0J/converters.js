@@ -6,7 +6,7 @@ function celciusToFarenheiet(celsius) {
 //Old function
 module.exports.celciusToFarenheiet = celciusToFarenheiet;
 
-module.exports.fahrenheitToCelsius = function(fahreheit) {
+module.exports.fahrenheitToCelsius = function (fahreheit) {
     return (fahreheit - 32) * (5 / 9);
 };
 
