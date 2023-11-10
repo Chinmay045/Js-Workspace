@@ -1,12 +1,8 @@
-function celciusToFarenheiet(celsius) {
-    return celsius * (9 / 5) + 32;
-}
+const converters = require('./converters');
 
-const freezingPointC = 0;
-const boilingPointC = 100;
-
-const freezingPointF = celciusToFarenheiet(freezingPointC);
-const boilingPointF = celciusToFarenheiet(boilingPointC);
+const freezingPointF = converters.celciusToFarenheiet(0);
+const boilingPointF = converters.celciusToFarenheiet(100);
 
 console.log(`The freezing point of water in Fahrenheit is ${freezingPointF}`);
 console.log(`The Boiling point of water in Fahrenheit is ${boilingPointF}`);
+
