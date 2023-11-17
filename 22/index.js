@@ -9,4 +9,6 @@ cars[0] = "Opel";
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.toString();
 
-console.log(fruits);
+
+const person = {firstName:"John", lastName:"Doe", age:46};
+console.log(person.firstName);
