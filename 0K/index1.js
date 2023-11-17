@@ -33,9 +33,12 @@ function gotToHell(props) {
 
         setTimeout((key, objs) => {
             console.log(objs[key]);
-            setTimeout((sub)=>{
+            setTimeout((sub) => {
                 console.log(`Age of kishan is : ${sub.age}`);
-            },2000,objs['kishan'])
+                setTimeout((sub) => {
+                    console.log(`Hobbies of kishan are: ${sub.hobbies}`);
+                },2000,sub)
+            }, 2000, objs['kishan'])
         }, 3000, 'kishan', objs)
     }, 2000, props);
 }
