@@ -10,5 +10,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.toString();
 
 
-const person = {firstName:"John", lastName:"Doe", age:46};
+const person = { firstName: "John", lastName: "Doe", age: 46 };
 console.log(person.firstName);
+
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");
+console.log(fruits);
