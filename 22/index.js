@@ -5,4 +5,8 @@
 // let car = cars[0];
 const cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Opel";
-console.log(cars);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+console.log(fruits);
