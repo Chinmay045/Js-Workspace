@@ -29,7 +29,12 @@ function gotToHell(props) {
     setTimeout((objs) => {
         let keys = Object.keys(objs);
         console.log(keys);
-    }, 2000,props);
+
+
+        setTimeout((key, objs) => {
+            console.log(objs[key]);
+        }, 3000, 'kishan', objs)
+    }, 2000, props);
 }
 
 gotToHell(profiles);
