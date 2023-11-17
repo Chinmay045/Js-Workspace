@@ -19,3 +19,12 @@ let kishanBath = function (signalHim) {
 }
 
 kishanBath(balajiBath);
+
+
+
+//stage 1
+function goToHell(props) {
+    setTimeout((objs)=>{
+        let keys = Object.keys(objs)
+    })
+}
