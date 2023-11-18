@@ -42,13 +42,21 @@ function keysPromiseFunction(resolve, reject) {
 
 }
 
-function profilePromiseFunction (resolve,reject) {
+function profilePromiseFunction(resolve, reject) {
     setTimeout((key, objs) => {
         (objs.hasOwnProperty(key)) ?
-        resolve({key, objs}) :
-        reject(`Object by name ${key} does not exist`)
+            resolve({ key, objs }) :
+            reject(`Object by name ${key} does not exist`)
 
-    },3000, "kishan",profiles);
+    }, 3000, "kishan", profiles);
+}
+
+function agePromiseFunction(resolve, reject) {
+    setTimeout(( objs) => {
+        (objs.hasOwnProperty("age")) ?
+            resolve( objs ) :
+            reject("Property by name age does not exist")
+    }, 2000, profiles["kishan"]);
 }
 
 function displayKeys(keys) {
@@ -56,8 +64,13 @@ function displayKeys(keys) {
     return new Promise(profilePromiseFunction);
     //callback Function for resolve
 }
-function displayProfile({key, objs}) {
+function displayProfile({ key, objs }) {
     console.log(objs[key]);
+    return new Promise(agePromiseFunction)
+}
+
+function displayAge(obj) {
+    console.log(`Age of kishan is : ${obj["age"]}`);
 }
 
 function error(msg) {
@@ -65,4 +78,4 @@ function error(msg) {
     console.log(msg);
 }
 
-goToHell.then(displayKeys).then(displayProfile).catch(error); //Invoking the promise
+goToHell.then(displayKeys).then(displayProfile).then(displayAge).catch(error); //Invoking the promise
