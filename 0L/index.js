@@ -6,3 +6,17 @@
 
 let goToHell = new Promise(keysPromiseFunction);//creating new promise
 
+function keysPromiseFunction(resolve, reject){
+//callback function for promise
+
+}
+
+function displayKeys(keys){
+    //callback Function for resolve
+}
+
+function error(msg) {
+    //callback function for reject
+}
+
+goToHell.then(displayKeys).catch(error); //Invoking the promise
