@@ -59,23 +59,34 @@ function agePromiseFunction(resolve, reject) {
     }, 2000, profiles["kishan"]);
 }
 
-function displayKeys(keys) {
+// function displayKeys(keys) {
+//     console.log(keys);
+//     return new Promise(profilePromiseFunction);
+//     //callback Function for resolve
+// }
+// function displayProfile({ key, objs }) {
+//     console.log(objs[key]);
+//     return new Promise(agePromiseFunction)
+// }
+
+// function displayAge(obj) {
+//     console.log(`Age of kishan is : ${obj["age"]}`);
+// }
+
+// function error(msg) {
+//     //callback function for reject
+//     console.log(msg);
+// }
+// goToHell.then(displayKeys).then(displayProfile).then(displayAge).catch(error); //Invoking the promise
+
+goToHell.then((keys)=> {
     console.log(keys);
     return new Promise(profilePromiseFunction);
-    //callback Function for resolve
-}
-function displayProfile({ key, objs }) {
+}).then (({key, objs})=>{
     console.log(objs[key]);
     return new Promise(agePromiseFunction)
-}
-
-function displayAge(obj) {
-    console.log(`Age of kishan is : ${obj["age"]}`);
-}
-
-function error(msg) {
-    //callback function for reject
-    console.log(msg);
-}
-
-goToHell.then(displayKeys).then(displayProfile).then(displayAge).catch(error); //Invoking the promise
+}).then((obj)=>{
+      console.log(`Age of kishan is : ${obj["age"]}`);
+}).catch((msg) => {
+    console.log(msg)
+});
