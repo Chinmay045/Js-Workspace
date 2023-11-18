@@ -37,14 +37,27 @@ function keysPromiseFunction(resolve, reject) {
     //callback function for promise
     setTimeout((objs) => {
         let keys = Object.keys(objs);
-        (keys.length > 10) ? resolve(keys) : reject("Error while parsing keys from object")
+        (keys.length > 0) ? resolve(keys) : reject("Error while parsing keys from object")
     }, 2000, profiles);
 
 }
 
+function profilePromiseFunction (resolve,reject) {
+    setTimeout((key, objs) => {
+        (objs.hasOwnProperty(key)) ?
+        resolve({key, objs}) :
+        reject(`Object by name ${key} does not exist`)
+
+    },3000, "kishan",profiles);
+}
+
 function displayKeys(keys) {
     console.log(keys);
+    return new Promise(profilePromiseFunction);
     //callback Function for resolve
+}
+function displayProfile({key, objs}) {
+    console.log(objs[key]);
 }
 
 function error(msg) {
@@ -52,4 +65,4 @@ function error(msg) {
     console.log(msg);
 }
 
-goToHell.then(displayKeys).catch(error); //Invoking the promise
+goToHell.then(displayKeys).then(displayProfile).catch(error); //Invoking the promise
