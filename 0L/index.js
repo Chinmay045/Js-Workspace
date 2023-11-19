@@ -87,6 +87,6 @@ goToHell.then((keys)=> {
     return new Promise(agePromiseFunction)
 }).then((obj)=>{
       console.log(`Age of kishan is : ${obj["age"]}`);
-}).catch((msg) => {
-    console.log(msg)
+}).catch((msgg) => {
+    console.log(msgg)
 });
