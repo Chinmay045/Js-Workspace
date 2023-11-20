@@ -79,14 +79,29 @@ function agePromiseFunction(resolve, reject) {
 // }
 // goToHell.then(displayKeys).then(displayProfile).then(displayAge).catch(error); //Invoking the promise
 
-goToHell.then((keys)=> {
+// goToHell.then((keys)=> {
+//     console.log(keys);
+//     return new Promise(profilePromiseFunction);
+// }).then (({key, objs})=>{
+//     console.log(objs[key]);
+//     return new Promise(agePromiseFunction)
+// }).then((obj)=>{
+//       console.log(`Age of kishan is : ${obj["age"]}`);
+// }).catch((msgg) => {
+//     console.log(msgg)
+// });
+
+async function execute() {
+    let keys = await new Promise(keysPromiseFunction);
     console.log(keys);
-    return new Promise(profilePromiseFunction);
-}).then (({key, objs})=>{
+
+    let {key, objs} = await new Promise(agePromiseFunction);
     console.log(objs[key]);
-    return new Promise(agePromiseFunction)
-}).then((obj)=>{
-      console.log(`Age of kishan is : ${obj["age"]}`);
-}).catch((msgg) => {
-    console.log(msgg)
-});
+
+    let obj = await new Promise(agePromiseFunction);
+    console.log(obj);
+
+
+}
+
+execute();
