@@ -20,10 +20,9 @@
             //     return response.json();
             // }
 
-            function printData(data) {
-                let fullName = data.results[0].name.first + " " + data.results[0].name.last;
-                console.log(`Name of arandom person : ${fullName}`);
-            }
+            // function printData(data) {
+                
+            // }
 
             function doSomething() {
                 console.log("If error occurs");
@@ -33,7 +32,10 @@
 
             fetch("https://randomuser.me/api").then((response)=>{
                return response.json();
-            }).then(printData).catch(doSomething);
+            }).then((data)=>{
+                let fullName = data.results[0].name.first + " " + data.results[0].name.last;
+                console.log(`Name of arandom person : ${fullName}`);
+            }).catch(doSomething);
         }
 
 
