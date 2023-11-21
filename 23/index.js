@@ -14,3 +14,7 @@ console.log(fru);
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+console.log(fruits)
