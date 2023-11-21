@@ -22,3 +22,8 @@ console.log(fruits)
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();
 console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");
+console.log(fruits)
+
