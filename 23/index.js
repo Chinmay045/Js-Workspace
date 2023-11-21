@@ -35,3 +35,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 delete fruits[0];
 console.log(fruits)
 
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren)
+
