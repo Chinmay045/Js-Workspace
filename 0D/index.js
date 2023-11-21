@@ -35,7 +35,7 @@ add(5, 6);
 //Thhis is Mentos Zindagi
 
 const sum = (param) => {
-    param(5, 6);
+    param(5, 5);
     console.log(`Finished adding two numbers`);
 }
 
