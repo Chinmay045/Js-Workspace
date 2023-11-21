@@ -18,3 +18,7 @@ console.log(fruits)
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");
 console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+console.log(fruits)
