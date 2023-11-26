@@ -14,7 +14,8 @@ let rabbit = {
     __proto__: animal
 };
 
-rabbit.sleep();
+// rabbit.sleep();
+animal.sleep();
 
 alert(rabbit.isSleeping);
 alert(animal.isSleeping);

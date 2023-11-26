@@ -220,7 +220,7 @@ console.log(sum);
 
 //Mentos Zindagi
 
-const numbers = [15.5, 2.3, 1.1, 4.7];
+const numbers = [15.5, 2.3, 1.1, 4.77];
 // (getSum);
 
 let sum = numbers.reduce((total, num) => {
