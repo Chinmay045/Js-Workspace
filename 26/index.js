@@ -4,12 +4,13 @@ const fruits = new Map([
     ["oranges", 200]
   ]);
   
-  const fruits = new Map();
   
   // Set Map Values
   fruits.set("apples", 500);
   fruits.set("bananas", 300);
   fruits.set("oranges", 200);
-
+  
+  const fruits = new Map();
   fruits.set("apples", 200);
+  fruits.get("apples"); 
   console.log(fruits);
