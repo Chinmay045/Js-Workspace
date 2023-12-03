@@ -12,5 +12,6 @@ const fruits = new Map([
   
   const fruits = new Map();
   fruits.set("apples", 200);
-  fruits.get("apples"); 
+  fruits.get("apples");
+  fruits.delete("apples"); 
   console.log(fruits);
