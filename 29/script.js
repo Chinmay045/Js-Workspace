@@ -22,4 +22,8 @@ function Person(first, last, age, eye) {
 
   const myFather = new Person("John", "Doe", 50, "blue");
 const myMother = new Person("Sally", "Rally", 48, "green");
-  console.log(myFather);
+
+myFather.name = function () {
+    return this.firstName + " " + this.lastName;
+};
+console.log(myFather);
