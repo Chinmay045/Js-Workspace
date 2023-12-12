@@ -16,3 +16,4 @@ let name2 = {
 }
 
 printfullName.call(name2," Bengaluru", "Karnataka");
+printfullName.apply(name2,["mumbai", "Maharashtra"]);
