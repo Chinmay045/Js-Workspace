@@ -4,15 +4,15 @@ let name = {
    
 };
 
-let printfullName =  function () {
-    console.log(this.firstName + " " + this.lastName);
+let printfullName =  function (hometown, state) {
+    console.log(this.firstName + " " + this.lastName + " from " + hometown +" ," + state);
 }
 
-printfullName.call(name);
+printfullName.call(name, "shimoga", "Karnataka");
 
 let name2 = {
     firstName:"Sachin",
     lastName: "Tendlkar"
 }
 
-printfullName.call(name2);
+printfullName.call(name2," Bengaluru", "Karnataka");
