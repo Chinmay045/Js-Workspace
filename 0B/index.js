@@ -57,6 +57,15 @@ function mangoCost(countt) {
 
 let ab = mangoCost(35);
 console.log(ab);
+console.log(`Mango cost is  ${ab}`);
+
+var triangleArea = (b, h) => {
+    let a = b * h;
+    return a;
+}
+let area = triangleArea;
+triangleArea = null;
+console.log(area(5, 6));
 
 
 
