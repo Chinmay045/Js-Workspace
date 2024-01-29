@@ -15,3 +15,14 @@ console.log('world'.toUpperCase());
 console.log(Math.random());
 console.log(Math.ceil(45.677));
 console.log(Math.floor(45.6))
+
+let myName = 'chinmay';
+let age = 22;
+console.log('my name is ' + myName + ' and my age is ' + age);
+age = 23;
+console.log('my name is ' + myName + ' and my age is ' + age);
+
+const age1 = 22;
+console.log(age1)
+age1 = 23;
+console.log(age1)
