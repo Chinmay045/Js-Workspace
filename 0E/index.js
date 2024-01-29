@@ -19,3 +19,5 @@ let baby = {
 
 console.log(baby['horse baby']);
 console.log(baby['baby duck']);
+delete baby.cat;
+console.log(baby)
