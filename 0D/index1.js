@@ -30,8 +30,12 @@ console.log(squares);
 let filterEx = [23, 34, 56, 67, 'Banana', 'ornage', 'kiwi'];
 const events = filterEx.filter((sum) => {
 
-    return typeof sum == 'number';
+    return (typeof sum == 'number') ? true : false;
 });
 
 console.log(events);
+
+[2, 3, 4].map((sum) => {
+    console.log(sum);
+})
 
