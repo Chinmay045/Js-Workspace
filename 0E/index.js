@@ -21,3 +21,15 @@ console.log(baby['horse baby']);
 console.log(baby['baby duck']);
 delete baby.cat;
 console.log(baby)
+
+const actions = {
+    sayHello: function () {
+        console.log('Hello Everyone')
+    },
+    sayName: () => {
+        console.log('My name is Chinmay')
+    }
+}
+
+actions.sayHello();
+actions.sayName();
