@@ -5,12 +5,12 @@ let personOne = {
 }
 
 let personTwo = {
-    firstName: 'Virat',
+    firstName: 'Virat ',
     lastName: 'Kohli'
 }
 
-let printName = (obj) => {
-    console.log(`My first name is ${obj.firstName} and my last name is ${obj.lastName}`)
+let printName = function () {
+    console.log(`My first name is ${this.firstName} and my last name is ${this.lastName}`)
 }
 
-printName(personOne)
+printName.call(personOne);
