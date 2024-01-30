@@ -16,7 +16,12 @@ let baby = {
     'baby duck': 'duckling',
 
 }
+const modify = function (obj, changedName) {
+    obj.kangaroo = changedName;
+}
 
+modify(baby, 'Kittenn')
+console.log(baby)
 console.log(baby['horse baby']);
 console.log(baby['baby duck']);
 delete baby.cat;
@@ -30,6 +35,7 @@ const actions = {
         console.log('My name is Chinmay')
     }
 }
+
 
 actions.sayHello();
 actions.sayName();
