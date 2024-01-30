@@ -9,8 +9,9 @@ let personTwo = {
     lastName: 'Kohli'
 }
 
-let printName = function () {
-    console.log(`My first name is ${this.firstName} and my last name is ${this.lastName}`)
+let printName = function (homeTown, state) {
+    console.log(`My first name is ${this.firstName} and my last name is ${this.lastName} from ${homeTown}, ${state}`)
 }
 
-printName.call(personOne);
+printName.call(personOne, 'Shivamogga', 'Karnataka');
+printName.apply(personTwo, ['Bengaluru', 'Karnataka']);
